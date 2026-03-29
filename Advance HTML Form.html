@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 30px;
+  }
+
+  form {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+  }
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+fieldset{
+    margin-bottom: 20px;
+border: 1px solid black;
+padding: 15px;
+}
+legend{
+    font-weight: bold;
+    padding: 0 10px;
+}
+label{
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+.inline{
+    width: auto;
+    margin-right: 10px;
+}
+  .row div {
+ 
+    flex: 1;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+    </style>
+</head>
+<body>
+  <form action="">
+    <h1>Students Registration Form</h1>
+    <!-- Personal Information -->
+     <fieldset>
+        <legend>
+            Personal Information
+        </legend>
+        <div class="row">
+<div>
+    <label for="">First Name</label>
+    <input type="text" placeholder="Enter first name" required>
+</div>
+<div>
+    <label for="">Last Name</label>
+    <input type="text" placeholder="Enter last name" required>
+</div>
+        </div>
+
+        <label for="Email">Email</label>
+        <input type="email" placeholder="Example@gmail.com" required>
+         <label for="Email">Password</label>
+        <input type="text" placeholder="********" required>
+         <label for="Email">Phone</label>
+        <input type="text" placeholder="030XXXXXXXXX" required>
+         <label for="Email">Date of Birth</label>
+        <input type="date" required>
+<label for="">Gender</label>
+<input class="inline"   type="radio" name="gender">Male
+<input    class="inline" type="radio" name="gender">Female
+<input  class="inline"    type="radio" name="gender">Other
+       
+        
+     </fieldset>
+
+     <!-- Education -->
+      <fieldset>
+        <legend>Education Details</legend>
+        <label for="">Highest Qualifications</label>
+        <select name="" id="" required>
+            <option value="Select">Select</option>
+            <option value="Matric">Matric</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Bachelors">Bachelors</option>
+            <option value="Master">Master</option>
+           </select>
+             <label for="">Field of Study</label>
+      <select name="" id="">
+        <optgroup label="Computer Science">
+          <option value="">Web</option>
+          <option value="">AI/Ml</option>
+          <option value="">Data Science</option>
+        </optgroup>
+   <optgroup label="Engineering">
+          <option value="">Software Engineering</option>
+          <option value="">Electrical</option>
+        </optgroup>
+      </select>
+<label for="">Skills</label>
+<input class="inline"   type="checkbox">HTML
+<input  class="inline"   type="checkbox">CSS
+<input class="inline"      type="checkbox">Js
+<input class="inline"     type="checkbox">React
+          
+         
+      </fieldset>
+     <fieldset>
+<legend>Upload & References</legend>
+       <label for="">Upload Resume</label>
+       <input type="file" name="" id="">
+       <label for="">Available Time</label>
+       <input type="time" name="" id="">
+        <label for="">Experience Level(0-10)</label>
+        <input type="range" min="0" max="10" id="">
+     </fieldset>
+     <fieldset>
+<legend>Additional Information</legend>
+<label for="">About Yourself</label>
+<textarea rows="4" placeholder="write somoething about yourself"></textarea>
+<label for="">
+    <input type="checkbox"> I agree to Terms and Conditions
+</label>
+     </fieldset>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+
+
+</body>
+</html>
